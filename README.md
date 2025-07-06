@@ -32,7 +32,7 @@ A real‑time surveillance service that watches any video stream, detects critic
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/<your‑org>/<repo>.git
+git clone https://github.com/Abhi-150702/ViT-Based-Security-Serviellance.git
 cd <repo>
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
