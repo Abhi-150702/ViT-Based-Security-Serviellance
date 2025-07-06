@@ -94,20 +94,6 @@ You can extend either schema with optional fields such as `confidence`, `bbox`, 
 
 ---
 
-## 🛠️  Project Structure
-
-```
-.
-├── app/
-│   ├── camera.py          # Camera wrapper around OpenCV
-│   ├── vision.py          # LLaVA client
-│   ├── language.py        # Llama client
-│   └── db.py              # DB helper functions
-├── main.py                # Entry point (CLI)
-├── requirements.txt       # Python dependencies
-└── README.md
-```
-
 ---
 
 ## 🔧 Configuration Options
