@@ -34,17 +34,14 @@ class Camera:
         self.frame_count = -1
         while True:
             self.frame_count += 1
-            print('\n\n>>>> ---------------------------------------------------------------- <<<<\t', self.frame_count)
             ret, frame = cap.read()
             if not ret:
                 break
 
             if self.frame_count % self.skip == 0:
                 description = llava.get_llava_description(frame)
-                print('\n\ndescription: ', description)
 
                 alert_msg = llama.generate_alert(description)
-                print('\nalert: ', alert_msg)
 
                 try:
                     
