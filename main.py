@@ -1,8 +1,17 @@
+from argparse import ArgumentParser
 from app import Camera
 
-# Defining the video path and creating an object cam for video processing purpose.
-video_path = 'videos/car.mp4'
-cam = Camera(video_path)
+def main() -> None:
+    parser = ArgumentParser()
+    
+    parser.add_argument(
+        "--url",
+        required=True,
+    )
+    args = parser.parse_args()
 
-#initiating the processing.
-cam.read_stream()
+    cam = Camera(args.url)
+    cam.read_stream()
+
+if __name__ == "__main__":
+    main()
